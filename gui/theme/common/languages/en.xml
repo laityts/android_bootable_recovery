@@ -736,5 +736,37 @@
 		<string name="flash_ab_reboot">To flash additional zips, please reboot recovery to switch to the updated slot.</string>
 		<string name="ozip_decrypt_decryption">Starting Ozip Decryption...</string>
 		<string name="ozip_decrypt_finish">Ozip Decryption Finished!</string>
+
+		<!-- Tools -->
+		<string name="tools_hdr">Tools</string>
+		<string name="tools_btn">Tools</string>
+		<string name="installsu_btn">Root Device</string>
+		<string name="installsu_confirm">Do you Install Magisk?</string>
+		<string name="installsu_doing">Installing Magisk...</string>
+		<string name="installsu_complete">Install Magisk Complete</string>
+		<string name="unroot_btn">Unroot</string>
+		<string name="unroot_confirm">Do you remove Root?</string>
+		<string name="unroot_doing">Removing Root...</string>
+		<string name="unroot_complete">Remove Root Complete</string>
+		<string name="sign_boot_btn">Sign Boot</string>
+		<string name="sign_boot_confirm">Do you sign boot?</string>
+		<string name="sign_boot_text1">Signed boot can prevent twrp from being replaced by stock recovery</string>
+		<string name="sign_boot_text2">and getting stuck on boot.</string>
+		<string name="sign_boot_doing">Signing Boot...</string>
+		<string name="sign_boot_complete">Sign Boot Complete</string>
+		<string name="rm_bootpwd_btn">RM Boot-PWD</string>
+		<string name="rm_bootpwd_confirm">Do you remove password on system boot?</string>
+		<string name="rm_bootpwd_doing">Removing Boot PWD...</string>
+		<string name="rm_bootpwd_complete">Remove Boot PWD Complete</string>	
+		<string name="rm_batteryinfo_btn">RM Battery-info</string>
+		<string name="rm_batteryinfo_confirm">Do you remove battery information?</string>
+		<string name="rm_batteryinfo_doing">Removing Battery Info...</string>
+		<string name="rm_batteryinfo_complete">Remove Battery Info Complete</string>
+		<string name="MakeMeSAR_btn">MakeMeSAR</string>
+		<string name="MakeMeSAR_confirm">Do you Install MakeMeSAR?</string>
+		<string name="MakeMeSAR_text1">Useful patch to make your device system-as-root,</string>
+		<string name="MakeMeSAR_text2">and getting stuck on boot.</string>
+		<string name="MakeMeSAR_doing">Installing MakeMeSAR...</string>
+		<string name="MakeMeSAR_complete">Install MakeMeSAR Complete</string>
 	</resources>
 </language>

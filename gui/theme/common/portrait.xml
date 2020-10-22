@@ -3550,9 +3550,15 @@
 				<text>{@file_manager_btn=File Manager}</text>
 				<action function="page">filemanagerlist</action>
 			</button>
+			
+			<button style="main_button">
+				<placement x="%indent%" y="%row13a_y%"/>
+				<text>{@tools_btn=Tools}</text>
+				<action function="page">tools</action>
+			</button>
 
 			<listbox style="advanced_listbox">
-				<placement x="%indent%" y="%row13a_y%" w="%content_width%" h="%listbox_advanced_height%"/>
+				<placement x="%indent%" y="%row18_y%" w="%content_width%" h="%listbox_advanced_height%"/>
 				<listitem name="{@decrypt_users=Decrypt Users}">
 					<conditions>
 						<condition var1="tw_is_fbe" var2="1"/>
@@ -4077,8 +4083,8 @@
 				<path name="tw_file_location1" default="/"/>
 				<data name="tw_filename1"/>
 				<selection name="tw_selection1"/>
-			</fileselector>
-
+			</fileselector>			
+		
 			<button style="fab">
 				<image resource="fab_selectfolder"/>
 				<actions>
@@ -4240,6 +4246,131 @@
 			<action>
 				<touch key="back"/>
 				<action function="page">filemanagerlist</action>
+			</action>
+		</page>
+		<page name="tools">
+			<template name="page"/>
+
+ 			<text style="text_l">
+				<placement x="%col1_x_header%" y="%row3_header_y%"/>
+				<text>{@tools_hdr=Tools}</text>
+			</text>
+
+			<button style="main_button">
+				<placement x="%indent%" y="%row2a_y%"/>
+				<text>{@installsu_btn=Root Device}</text>
+				<actions>
+					<action function="set">tw_back=tools</action>
+					<action function="set">tw_filename=/tools/magisk.zip</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip</action>
+					<action function="set">tw_text1={@installsu_confirm=Do you Install Magisk?}</action>
+					<action function="set">tw_action_text1={@installsu_doing=Installing Magisk...}</action>
+					<action function="set">tw_complete_text1={@installsu_complete=Install Magisk Complete}</action>
+					<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+			<button style="main_button">
+				<placement x="%center_x%" y="%row2a_y%"/>
+				<text>{@unroot_btn=Unroot}</text>
+				<actions>
+					<action function="set">tw_back=tools</action>
+					<action function="set">tw_filename=/tools/unroot.zip</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip</action>
+					<action function="set">tw_text1={@unroot_confirm=Do you remove Root?}</action>
+					<action function="set">tw_action_text1={@unroot_doing=Removing Root...}</action>
+					<action function="set">tw_complete_text1={@unroot_complete=Remove Root Complete}</action>
+					<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
+					<action function="page">confirm_action</action>
+					</actions>
+			</button>
+			<button style="main_button">
+				<placement x="%indent%" y="%row8_y%"/>
+				<text>{@sign_boot_btn=Sign Boot}</text>
+				<actions>
+					<action function="set">tw_back=tools</action>
+					<action function="set">tw_filename=/tools/sign_boot.zip</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip</action>
+					<action function="set">tw_text1={@sign_boot_confirm=Do you sign boot?}</action>
+					<action function="set">tw_text3={@sign_boot_text1=Signed boot can prevent twrp from being replaced by stock recovery}</action>
+					<action function="set">tw_text4={@sign_boot_text2=and getting stuck on boot.}</action>
+					<action function="set">tw_action_text1={@sign_boot_doing=Signing Boot...}</action>
+					<action function="set">tw_complete_text1={@sign_boot_complete=Sign Boot Complete}</action>
+					<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+			<button style="main_button">
+				<placement x="%center_x%" y="%row8_y%"/>
+				<text>{@rm_bootpwd_btn=RM Boot-PWD}</text>
+				<actions>
+					<action function="set">tw_back=tools</action>
+					<action function="set">tw_filename=/tools/del_pwd.zip</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip</action>
+					<action function="set">tw_text1={@rm_bootpwd_confirm=Do you remove password on system boot?}</action>
+					<action function="set">tw_action_text1={@rm_bootpwd_doing=Removing Boot PWD...}</action>
+					<action function="set">tw_complete_text1={@rm_bootpwd_complete=Remove Boot PWD Complete}</action>
+					<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+			<button style="main_button">
+				<placement x="%indent%" y="%row13a_y%"/>
+				<text>{@rm_batteryinfo_btn=RM Battery-info}</text>
+				<actions>
+					<action function="set">tw_back=tools</action>
+					<action function="set">tw_filename=/tools/del_battery-info.zip</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip</action>
+					<action function="set">tw_text1={@rm_batteryinfo_confirm=Do you remove battery information?}</action>
+					<action function="set">tw_action_text1={@rm_batteryinfo_doing=Removing Battery Info...}</action>
+					<action function="set">tw_complete_text1={@rm_batteryinfo_complete=Remove Battery Info Complete}</action>
+					<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+			<button style="main_button">
+				<placement x="%center_x%" y="%row13a_y%"/>
+				<text>{@MakeMeSAR_btn=MakeMeSAR}</text>
+				<actions>
+					<action function="set">tw_back=tools</action>
+					<action function="set">tw_filename=/tools/MakeMeSAR.zip</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip</action>
+					<action function="set">tw_text1={@MakeMeSAR_confirm=Do you install MakeMeSAR?}</action>
+					<action function="set">tw_text3={@MakeMeSAR_text1=Useful patch to make your device system-as-root,}</action>
+					<action function="set">tw_text4={@MakeMeSAR_text2=and install AN GSIs on it.}</action>
+					<action function="set">tw_action_text1={@MakeMeSAR_doing=Installing MakeMeSAR...}</action>
+					<action function="set">tw_complete_text1={@MakeMeSAR_complete=Install MakeMeSAR Complete}</action>
+					<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+
+			<action>
+				<touch key="home"/>
+				<action function="page">main</action>
+			</action>
+
+ 			<action>
+				<touch key="back"/>
+				<action function="page">advanced</action>
 			</action>
 		</page>
 

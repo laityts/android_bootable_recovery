@@ -715,5 +715,37 @@
 		<string name="include_kernel_log">包含内核日志</string>
 		<string name="sha2_chk">使用 SHA2 进行散列校验</string>
 		<string name="unable_set_boot_slot">更改 bootloader 启动分区至 {1} 错误</string>
-	</resources>
+
+		<!-- Tools -->
+		<string name="tools_hdr">工具</string>
+		<string name="tools_btn">工具</string>
+		<string name="installsu_btn">安装Magisk</string>
+		<string name="installsu_confirm">是否安装Magisk?</string>
+		<string name="installsu_doing">正在安装Magisk...</string>
+		<string name="installsu_complete">安装Magisk完成</string>
+		<string name="unroot_btn">清除Root</string>
+		<string name="unroot_confirm">是否清除Root？</string>
+		<string name="unroot_doing">正在清除Root...</string>
+		<string name="unroot_complete">清除Root完成</string>
+		<string name="sign_boot_btn">签名Boot</string>
+		<string name="sign_boot_confirm">确定要签名Boot?</string>
+		<string name="sign_boot_text1">签名boot可以阻止twrp被官方recovery覆盖，</string>
+		<string name="sign_boot_text2">也可以避免卡在第一屏。</string>
+		<string name="sign_boot_doing">正在签名Boot...</string>
+		<string name="sign_boot_complete">签名Boot完成</string>
+		<string name="rm_bootpwd_btn">清除开机密码</string>
+		<string name="rm_bootpwd_confirm">是否清除系统开机密码？</string>
+		<string name="rm_bootpwd_doing">正在清除开机密码...</string>
+		<string name="rm_bootpwd_complete">清除开机密码完成</string>
+		<string name="rm_batteryinfo_btn">清除电池信息</string>
+		<string name="rm_batteryinfo_confirm">是否清除电池信息？</string>
+		<string name="rm_batteryinfo_doing">正在清除电池信息...</string>
+		<string name="rm_batteryinfo_complete">清除电池信息完成</string>
+		<string name="MakeMeSAR_btn">MakeMeSAR</string>
+		<string name="MakeMeSAR_confirm">是否安装MakeMeSAR?</string>
+		<string name="MakeMeSAR_text1">一个有用的补丁,使您的设备系统支持SAR,</string>
+		<string name="MakeMeSAR_text2">并在其上安装AB GSIs.</string>
+		<string name="MakeMeSAR_doing">正在安装MakeMeSAR...</string>
+		<string name="MakeMeSAR_complete">安装MakeMeSAR完成</string>
+		</resources>
 </language>
